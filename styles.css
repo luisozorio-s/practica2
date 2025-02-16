@@ -1,0 +1,124 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #5ffbf8, #62cbf5);
+    margin: 0;
+}
+
+
+/* Contenedor principal */
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Caja de formularios */
+
+.box {
+    border-radius: 12px;
+    padding: 100px;
+    width: 360px;
+    background: transparent;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.box:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Títulos */
+
+h3 {
+    background: linear-gradient(135deg, #5ffbf8, #62cbf5);
+    color: black;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* Etiquetas */
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+    text-align: center;
+    /* Centra el texto de las etiquetas */
+    font-size: 14px;
+    color: black;
+}
+
+
+/* Campos de entrada */
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    /* Centra el texto dentro del input */
+    outline: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #611232;
+    box-shadow: 0px 0px 10px rgba(33, 147, 176, 0.4);
+}
+
+
+/* Botones */
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #5ffbf8, #62cbf5);
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #5ffbf8, #62cbf5);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Responsividad */
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 400px;
+    }
+    .box {
+        width: 90%;
+    }
+}
